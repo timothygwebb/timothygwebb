@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @timothygwebb.
-- 👀 I’m interested in data.
-- 🌱 I’m currently learning technical writing.
-- 💞️ I’m looking to collaborate on Azure.
+- 👀 I’m interested in all things data.
+- 🌱 I’m currently learning Enterprise Architect.
+- 💞️ I’m looking to collaborate on anything related to Azure.
 - 📫 How to reach me on GitHub is by direct message @timothygwebb.
 
 <!---
