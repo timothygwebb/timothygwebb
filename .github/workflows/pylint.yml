@@ -16,7 +16,8 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade utils pip wheel docstring pylint
+        python -m pip install utils
     - name: Analysing the code with pylint
       run: |
+        python -m pip install pylint
         pylint $(git ls-files '*.py')
