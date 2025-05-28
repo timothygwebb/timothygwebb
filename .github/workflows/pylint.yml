@@ -17,7 +17,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install utils 
-        apt -y --force install docstring
+        apt -y install docstring
     - name: Analysing the code with pylint
       run: |
         
