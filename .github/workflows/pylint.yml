@@ -16,4 +16,4 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        python -m pip install wheel docstring pylint
+        python -m pip install utils wheel docstring pylint
