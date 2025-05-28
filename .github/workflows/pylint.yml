@@ -16,10 +16,8 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        python -m pip install utils 
-        sudo apt -y install ocaml-nox elpa-yasnippet-snippets
+        python -m pip install utils wheel pylint
     - name: Analysing the code with pylint
       run: |
-        python -m pip install pylint
         python -m pip install --upgrade pip
         pylint $(git ls-files '*.py')
