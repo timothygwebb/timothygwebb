@@ -1,0 +1,30 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+# Triggers the workflow on push or pull request events but only for the "master" branch
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+# Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+    build:
+        runs-on: ...
+        steps:
+            - uses: actions/checkout@v4
+
+            # ... some other preparation steps (dependencies, compilation as a separate step, etc) ...
+
+            - name: Setup Testcontainers Cloud Client
+              uses: atomicjar/testcontainers-cloud-setup-action@v1
+              with:
+                  token: ${{ secrets.TC_CLOUD_TOKEN }}
+
+            # ... existing steps executing your Testcontainers tests go here ...
